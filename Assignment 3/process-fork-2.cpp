@@ -29,7 +29,7 @@ int main()
 		std::cout << "My parent's ID is: " << parent_id << std::endl;
 	} else {
 		std::cout << "I just became a parent!\n";
-		waitpid(0, NULL, 0);
+		waitpid(id, NULL, 0);
 		std::cout << "My child process just terminated!" << std::endl;
 	}
 }
